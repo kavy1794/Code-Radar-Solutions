@@ -2,6 +2,6 @@
 int main() {
     float f;
     scanf("%f",&f);
-    printf("%f",f);
+    printf("%.2f",f);
     return 0;
 }
