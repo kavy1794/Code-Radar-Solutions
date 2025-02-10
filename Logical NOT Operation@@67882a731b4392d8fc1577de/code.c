@@ -3,9 +3,9 @@ int main()
 {
     int i;
     scanf("%d",&i);
-    if not(i>0)
-    printf("True");
-    else
+    if (i>0)
     printf("False");
+    else
+    printf("True");
     return 0;
 }
