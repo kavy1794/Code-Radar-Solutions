@@ -1,6 +1,6 @@
-#include <stdio.h>
-
-int main() {
+#include<stdio.h>L
+int main()
+{
     int a;
     scanf("%d",&a);
     if(a%2==0)
@@ -8,4 +8,4 @@ int main() {
     else
     printf("Set");
     return 0;
-}Loading Code...
+}oading Code...
