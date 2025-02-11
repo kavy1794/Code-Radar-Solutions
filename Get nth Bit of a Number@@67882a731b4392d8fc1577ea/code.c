@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main() {
-    int a,b,result;
+    int a,b,c
     scanf("%d%d",&a,&b);
-    result=(a>>b)&1
+    c=(a>>b)&1;
 
-    printf("%d",result);
+    printf("%d",c);
     return 0;
 }
