@@ -11,6 +11,6 @@ int main()
     printf("c");
     else if("a>=60 && a<70")
     printf("D");
-    else("a<60")
+    else
     printf("F");
 }
