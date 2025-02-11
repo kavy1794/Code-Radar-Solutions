@@ -1,4 +1,4 @@
-#include<stdio.h>L
+#include<stdio.h>
 int main()
 {
     int a;
