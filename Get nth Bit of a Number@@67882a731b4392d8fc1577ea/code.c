@@ -1,8 +1,26 @@
 #include <stdio.h>
-int main() {
-    int a,b,c;
-    scanf("%d%d",&a,&b);
 
-    printf("%d",c);
+// Function to get the nth bit of a number
+int get_nth_bit(int number, int n) {
+    // Shift the nth bit to the least significant bit position and mask it with 1
+    return (number >> n) & 1;
+}
+
+int main() {
+    int number, n;
+    
+    // Prompt the user to enter the number and the bit position
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    printf("Enter the bit position (0-based): ");
+    scanf("%d", &n);
+    
+    // Get the nth bit value
+    int nth_bit = get_nth_bit(number, n);
+    
+    // Print the result
+    printf("The value of the %dth bit of %d is: %d\n", n, number, nth_bit);
+    
     return 0;
 }
