@@ -3,22 +3,22 @@ int main()
 {
     int a;
     scanf("%d",&a);
-    if(a=1){
+    if(a==1){
     printf("Monday");
     }
-    else if(a=2){
+    else if(a==2){
     printf("tuesday");
     }
-    else if(a=3){
+    else if(a==3){
     printf("Wednesday");
     }
-    else if(a=4){
+    else if(a==4){
     printf("Thursday");
     }
-    else if(a=5){
+    else if(a==5){
     printf("Friday");
     }
-    else if(a=6){
+    else if(a==6){
     printf("Saturday");
     }
     else
