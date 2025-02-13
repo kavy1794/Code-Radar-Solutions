@@ -4,7 +4,7 @@ int main()
     int a;
     scanf("%d",&a);
     if(a=='A'){
-    printf("'Excellent'");
+    printf("Excellent");
     }
     else if(a=='B'){
         printf("Good");
@@ -18,7 +18,8 @@ int main()
      else if(a=='F'){
         printf("Fail");
     }
-    else
+    else{
     printf("Invalid grade");
+    }
     return 0;
 }
