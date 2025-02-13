@@ -6,19 +6,19 @@ int main()
     if(a=='A'){
     printf("Excellent");
     }
-    else if(a==2){
-        printf("28");
+    else if(a=='B'){
+        printf("Good");
     }
-     else if(a==3){
-        printf("31");
+     else if(a=='C'){
+        printf("Average");
     }
-     else if(a==4){
-        printf("30");
+     else if(a=='D'){
+        printf("Below Average");
     }
-     else if(a==12){
-        printf("31");
+     else if(a=='F'){
+        printf("Fail");
     }
     else
-    printf("Invalid month");
+    printf("Invalid grade");
     return 0;
 }
