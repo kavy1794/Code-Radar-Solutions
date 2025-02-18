@@ -2,7 +2,6 @@
 int main()
 {
     char c;
-    printf("Enter the digit");
     scanf("%c",&c);
     if(c>='0' && c<='9'){
         printf("Digit");
