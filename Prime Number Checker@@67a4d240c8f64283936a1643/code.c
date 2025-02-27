@@ -1,11 +1,23 @@
 #include <stdio.h>
-int main() {
-    int a;
-    scanf("%d",&a);
-    while(a--){
-        int num;
-        scanf("%d",&num);
-        printf("%d\n",isprime(num));
+int main()
+{
+    int i,n,prime=1;
+    scanf("%d",&n);
+    if(n<=1){
+        prime=0;
+    }else{
+        for(i=2; i <=n/ 2 ;++i){
+            if(n%i==0){
+            prime=0;
+            break;
+            
+            }
         }
-        return 0;
+        
+    }
+    if(prime)
+    printf("Prime",n);
+    else
+    printf("Not Prime",n);
+    return 0;
 }
