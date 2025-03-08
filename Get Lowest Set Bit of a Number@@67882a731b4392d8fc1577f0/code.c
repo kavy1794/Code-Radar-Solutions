@@ -19,7 +19,7 @@ int main() {
     int num;
 
     // Get the number from the user
-    printf("Enter a number: ");
+    // printf("Enter a number: ");
     scanf("%d", &num);
 
     // Find the position of the lowest set bit
@@ -29,7 +29,7 @@ int main() {
     if (position == -1) {
         printf("No set bit found in %d\n", num);
     } else {
-        printf("The position of the lowest set bit in %d is: %d\n", num, position);
+        printf("%d\n", num, position);
     }
 
     return 0;
