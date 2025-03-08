@@ -9,6 +9,6 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
     swap(&a, &b);
-    printf("%d\n%d\n", a, b);
+    printf("%d%d", a, b);
     return 0;
 }
