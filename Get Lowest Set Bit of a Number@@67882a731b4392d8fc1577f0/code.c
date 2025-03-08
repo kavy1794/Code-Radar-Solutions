@@ -19,18 +19,13 @@ int main() {
     int num;
 
     // Get the number from the user
-    printf("Enter a number:\n");
     scanf("%d", &num);
 
     // Find the position of the lowest set bit
     int position = getLowestSetBitPosition(num);
 
     // Print the result
-    if (position == -1) {
-        printf("No set bit found in %d\n", num);
-    } else {
-        printf("%d\n%d\n", num, position); // Format the output as required
-    }
+    printf("%d\n", position);
 
     return 0;
 }
