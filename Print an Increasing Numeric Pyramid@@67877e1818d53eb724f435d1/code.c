@@ -12,6 +12,7 @@ void printIncreasingNumericPyramid(int n) {
         printf("\n");
     }
 }
+
 int main() {
     int n;
     scanf("%d", &n);
