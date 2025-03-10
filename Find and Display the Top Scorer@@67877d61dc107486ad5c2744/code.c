@@ -11,8 +11,6 @@ int main() {
     int n;
     struct Student topStudent;
 
-    // Ask the user for the number of students
-    printf("Enter the number of students: ");
     scanf("%d", &n);
 
     // Create an array of Student structures to hold the data
