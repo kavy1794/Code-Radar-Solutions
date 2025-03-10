@@ -19,29 +19,24 @@ int main() {
     struct Student students[n];
 
     // Read information for each student
-    for (int i = 0; i < n; i++) {
-        printf("Enter information for student %d:\n", i + 1);
+    for (int i = 0; i < n; i++) {;
         
-        printf("Roll Number: ");
         scanf("%d", &students[i].rollNumber);
         
-        printf("Name: ");
         scanf("%s", students[i].name);
         
-        printf("Marks: ");
         scanf("%f", &students[i].marks);
 
-        // Update the top student if the current student has higher marks
         if (i == 0 || students[i].marks > topStudent.marks) {
             topStudent = students[i];
         }
     }
 
     // Print the information of the top student
-    printf("\nTop Scorer:\n");
-    printf("Roll Number: %d\n", topStudent.rollNumber);
-    printf("Name: %s\n", topStudent.name);
-    printf("Marks: %.2f\n", topStudent.marks);
+    printf("Top Scorer:\n");
+    printf("Roll Number: %d", topStudent.rollNumber);
+    printf("Name: %s", topStudent.name);
+    printf("Marks: %.2f", topStudent.marks);
 
     return 0;
 }
