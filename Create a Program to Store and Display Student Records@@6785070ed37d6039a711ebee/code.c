@@ -17,15 +17,15 @@ int main() {
 
     // Read information for each student
     for (int i = 0; i < n; i++) {
-        printf("Enter information for student %d:\n", i + 1);
+        // printf("Enter information for student %d:\n", i + 1);
         
-        printf("Roll Number: ");
+        // printf("Roll Number: ");
         scanf("%d", &students[i].rollNumber);
         
-        printf("Name: ");
+        // printf("Name: ");
         scanf("%s", students[i].name);
         
-        printf("Marks: ");
+        // printf("Marks: ");
         scanf("%f", &students[i].marks);
     }
 
