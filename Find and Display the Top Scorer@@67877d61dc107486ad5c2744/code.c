@@ -32,9 +32,9 @@ int main() {
 
     // Print the information of the top student
     printf("Top Scorer:");
-    printf(",Roll Number: %d", topStudent.rollNumber);
-    printf(",Name: %s", topStudent.name);
-    printf(",Marks: %.2f", topStudent.marks);
+    printf("Roll Number: %d", topStudent.rollNumber);
+    printf(", Name: %s", topStudent.name);
+    printf(", Marks: %.2f", topStudent.marks);
 
     return 0;
 }
