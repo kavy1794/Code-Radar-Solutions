@@ -5,7 +5,7 @@ void printTriangle(int n) {
     for (int i = 1; i <= n; i++) {
         letter = 'A';
         for (int j = 1; j <= i; j++) {
-            printf("%c", letter);
+            printf(" %c ", letter);
             letter++;
         }
         printf("\n");
@@ -14,7 +14,7 @@ void printTriangle(int n) {
 
 int main() {
     int n;
-    scanf("%d ", &n);
+    scanf(" %d ", &n);
     printTriangle(n);
     return 0;
 }
