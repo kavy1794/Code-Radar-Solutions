@@ -24,9 +24,9 @@ int main() {
     }
 
     printf("Student with Minimum Marks:");
-    printf("Roll Number: %d", minStudent.rollNumber);
-    printf("Name: %s", minStudent.name);
-    printf("Marks: %.2f", minStudent.marks);
+    printf(" Roll Number: %d", minStudent.rollNumber);
+    printf(", Name: %s", minStudent.name);
+    printf(", Marks: %.2f", minStudent.marks);
 
     return 0;
 }
