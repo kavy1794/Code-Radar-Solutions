@@ -33,17 +33,15 @@ int findSmallestMissingPositive(int arr[], int n) {
 
 int main() {
     int n;
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter the array elements: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int result = findSmallestMissingPositive(arr, n);
-    printf("The smallest missing positive integer is: %d\n", result);
+    printf("%d\n", result);
 
     return 0;
 }
