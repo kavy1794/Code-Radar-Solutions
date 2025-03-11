@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void findFrequencies(int arr[], int n) {
-    int visited[1000] = {0}; // Assuming maximum element value is less than 1000
+    int visited[1000] = {0};
 
     for (int i = 0; i < n; i++) {
         if (!visited[i]) {
