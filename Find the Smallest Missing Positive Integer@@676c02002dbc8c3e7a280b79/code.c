@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int findSmallestMissingPositive(int arr[], int n) {
     int shift = 0;
