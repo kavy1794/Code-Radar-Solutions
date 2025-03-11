@@ -17,12 +17,16 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
         
-        if (i <= 2 || students[i].marks < minStudent.marks) {
+        if (i == 0 || students[i].marks < minStudent.marks) {
             minStudent = students[i];
         }
     }
 
-    printf("Roll Number: %d,Name: %s,Marks: %.2f", minStudent.rollNumber,minStudent.name,minStudent.marks);
+    for (int i = 0; i < n; i++) {
+        printf("Roll number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+    }
+
+    printf("Roll Number: %d, Name: %s, Marks: %.2f", minStudent.rollNumber,minStudent.name,minStudent.marks);
 
     return 0;
 }
