@@ -12,12 +12,12 @@ int findSecondLargest(int arr[], int n) {
         if (arr[i] > first) {
             second = first;
             first = arr[i];
-        } else if (arr[i] > second && arr[i] != first) {
+        } else if (arr[i] < first && (second == -1 || arr[i] > second)) {
             second = arr[i];
         }
     }
 
-    return second == -1 ? -1 : second;
+    return second;
 }
 
 int main() {
