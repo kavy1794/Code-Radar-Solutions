@@ -22,10 +22,10 @@ int main() {
         }
     }
 
-    printf("Student with Minimum Marks:\n");
-    printf("Roll Number: %d\n", minStudent.rollNumber);
-    printf("Name: %s\n", minStudent.name);
-    printf("Marks: %.2f\n", minStudent.marks);
+    printf("Student with Minimum Marks:");
+    printf(" Roll Number: %d", minStudent.rollNumber);
+    printf(", Name: %s", minStudent.name);
+    printf(", Marks: %.2f", minStudent.marks);
 
     return 0;
 }
