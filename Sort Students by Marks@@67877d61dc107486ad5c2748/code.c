@@ -26,10 +26,6 @@ int main() {
         printf("Roll number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
     }
 
-    printf("\nStudent with Minimum Marks:\n");
-    printf("Roll Number: %d\n", minStudent.rollNumber);
-    printf("Name: %s\n", minStudent.name);
-    printf("Marks: %.2f\n", minStudent.marks);
-
+    
     return 0;
 }
