@@ -17,7 +17,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
         
-        if (i == 2 || students[i].marks < minStudent.marks) {
+        if (i <= 2 || students[i].marks < minStudent.marks) {
             minStudent = students[i];
         }
     }
