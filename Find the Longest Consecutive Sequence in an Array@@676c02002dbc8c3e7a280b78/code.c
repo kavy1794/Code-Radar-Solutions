@@ -39,5 +39,8 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int result
+    int result = findLongestConseqSubseq(arr, n);
+    printf("Length of the longest consecutive sequence is: %d\n", result);
+
+    return 0;
 }
