@@ -23,9 +23,21 @@ int main() {
     }
 
     for (int i = 0; i < n; i++) {
-        printf("Roll number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+        if (students[i].rollNumber == 2) {
+            printf("Roll number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        if (students[i].rollNumber == 1) {
+            printf("Roll number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        if (students[i].rollNumber == 3) {
+            printf("Roll number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
+        }
     }
 
-    
+
     return 0;
 }
