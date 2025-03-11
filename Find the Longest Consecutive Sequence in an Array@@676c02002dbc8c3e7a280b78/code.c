@@ -30,17 +30,15 @@ int findLongestConseqSubseq(int arr[], int n) {
 
 int main() {
     int n;
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter the array elements: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int result = findLongestConseqSubseq(arr, n);
-    printf("Length of the longest consecutive sequence is: %d\n", result);
+    printf("%d\n", result);
 
     return 0;
 }
