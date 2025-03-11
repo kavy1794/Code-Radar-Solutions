@@ -21,6 +21,7 @@ int main() {
             minStudent = students[i];
         }
     }
+
     printf("Roll Number: %d\n", minStudent.rollNumber);
     printf("Name: %s\n", minStudent.name);
     printf("Marks: %.2f\n", minStudent.marks);
