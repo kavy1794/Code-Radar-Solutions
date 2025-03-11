@@ -15,7 +15,7 @@ int main() {
     struct Student minStudent;
 
     for (int i = 0; i < n; i++) {
-        printf(" %d: ", i + 1);
+        // printf(" %d: ", i + 1);
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
         
         if (i == 0 || students[i].marks < minStudent.marks) {
@@ -23,10 +23,10 @@ int main() {
         }
     }
 
-    printf("\nStudent with Minimum Marks:\n");
-    printf("Roll Number: %d\n", minStudent.rollNumber);
-    printf("Name: %s\n", minStudent.name);
-    printf("Marks: %.2f\n", minStudent.marks);
+    printf("Student with Minimum Marks:");
+    printf("Roll Number: %d", minStudent.rollNumber);
+    printf("Name: %s", minStudent.name);
+    printf("Marks: %.2f", minStudent.marks);
 
     return 0;
 }
