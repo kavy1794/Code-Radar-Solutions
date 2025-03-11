@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    printf("Roll Number: %d\n,Name: %s,Marks: %.2f", minStudent.rollNumber,minStudent.name,minStudent.marks);
+    printf("Roll Number: %d,Name: %s,Marks: %.2f", minStudent.rollNumber,minStudent.name,minStudent.marks);
 
     return 0;
 }
