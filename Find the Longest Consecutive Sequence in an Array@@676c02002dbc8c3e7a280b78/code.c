@@ -28,7 +28,7 @@ int findLongestConseqSubseq(int arr[], int n) {
     return longest_streak;
 }
 
-int main() 
+int main() {
     int n;
     printf("Enter the size of the array: ");
     scanf("%d", &n);
@@ -40,3 +40,4 @@ int main()
     }
 
     int result
+}
