@@ -23,4 +23,3 @@ int main() {
     printf("%d", max1 * max2);
     return 0;
 }
-```
