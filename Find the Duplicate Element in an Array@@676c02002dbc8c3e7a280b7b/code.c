@@ -4,10 +4,14 @@ int main() {
     int N;
     scanf("%d", &N);
 
-    int arr[N], count[N];
+    int arr[N];
     for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
-        count[i] = 0;
+    }
+
+    int count[N]; 
+    for (int i = 0; i < N; i++) {
+        count[i] = 0; 
     }
 
     for (int i = 0; i < N; i++) {
