@@ -10,7 +10,11 @@ int main() {
         length++;
     }
 
-    printf("%d\n", length);
+    if (length == 0) { 
+        printf("0\n");
+    } else {
+        printf("%d\n", length);
+    }
 
     return 0;
 }
