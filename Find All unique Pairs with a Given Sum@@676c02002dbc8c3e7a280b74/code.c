@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-void findPairs(int arr[], int n, int target) {
+void findUniquePairs(int arr[], int n, int target) {
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == target) {
                 printf("%d %d\n", arr[i], arr[j]);
+
+                arr[i] = arr[j] = -100000; 
+                break;
             }
         }
     }
@@ -21,7 +24,7 @@ int main() {
 
     scanf("%d", &T);
 
-    findPairs(arr, N, T);
+    findUniquePairs(arr, N, T);
 
     return 0;
 }
