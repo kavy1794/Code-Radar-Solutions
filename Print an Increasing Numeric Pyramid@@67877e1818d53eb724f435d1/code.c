@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int N, num = 1;
+    int N;
     scanf("%d", &N);
 
     for (int i = 1; i <= N; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", num);
-            num++;
+        // Print spaces for centering
+        for (int j = 1; j <= N - i; j++) {
+            printf("    "); // Four spaces for alignment
         }
-        printf("\n");
+
+        // Print numbers for the current row
+        for (int j = 1; j <= i; j++) {
+            printf("%d     ", j); // Add extra spaces between numbers
+        }
+
+        printf("\n"); // Move to the next line
     }
 
     return 0;
