@@ -26,9 +26,9 @@ int main() {
         }
     }
 
-    printf("Standard: %.2f\n", totalStandard);
-    printf("Premium: %.2f\n", totalPremium);
-    printf("VIP: %.2f\n", totalVIP);
+    printf("Standard: %.2f", totalStandard);
+    printf(", Premium: %.2f", totalPremium);
+    printf(", VIP: %.2f", totalVIP);
 
     return 0;
 }
