@@ -11,14 +11,14 @@ int main() {
 
     int count[N]; 
     for (int i = 0; i < N; i++) {
-        count[i] = 0; 
+        count[i] = 0;
     }
 
     for (int i = 0; i < N; i++) {
         count[arr[i]]++;
         if (count[arr[i]] > 1) {
             printf("%d", arr[i]);
-            break;
+            return 0;
         }
     }
 
