@@ -12,7 +12,7 @@ int main() {
     scanf("%d", &N);
 
     struct MovieTicket tickets[N];
-    float totalStandard = 0, totalPremium = 0, totalVIP = 0;
+    float totalStandard = 0.0, totalPremium = 0.0, totalVIP = 0.0;
 
     for (int i = 0; i < N; i++) {
         scanf("%s %s %f", tickets[i].movieName, tickets[i].ticketType, &tickets[i].ticketPrice);
