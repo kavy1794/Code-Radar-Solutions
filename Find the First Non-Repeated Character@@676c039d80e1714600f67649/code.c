@@ -12,17 +12,17 @@ char firstNonRepeatedChar(char *str) {
             return str[i];
         }
     }
-    return '\0';
+    return '-';
 }
 
 int main() {
     char str[100];
     scanf("%s", str);
     char result = firstNonRepeatedChar(str);
-    if (result != '\0') {
+    if (result != '-') {
         printf("%c\n", result);
     } else {
-        printf("No non-repeated character found.\n");
+        printf("-\n");
     }
     return 0;
 }
