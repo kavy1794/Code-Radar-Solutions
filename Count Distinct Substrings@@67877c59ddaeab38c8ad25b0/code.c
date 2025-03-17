@@ -1,46 +1,29 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-
-typedef struct TrieNode {
-    struct TrieNode *children[26];
-} TrieNode;
-
-TrieNode *createNode() {
-    TrieNode *node = (TrieNode *)malloc(sizeof(TrieNode));
-    for (int i = 0; i < 26; i++) {
-        node->children[i] = NULL;
-    }
-    return node;
-}
-
-int insertSubstring(TrieNode *root, char *str, int start) {
-    TrieNode *current = root;
-    int count = 0;
-
-    for (int i = start; str[i] != '\0'; i++) {
-        int index = str[i] - 'a';
-        if (current->children[index] == NULL) {
-            current->children[index] = createNode();
-            count++;
-        }
-        current = current->children[index];
-    }
-
-    return count;
-}
 
 int countDistinctSubstrings(char *str) {
-    TrieNode *root = createNode();
-    int total = 0;
+    int n = strlen(str), count = 0;
 
-    for (int i = 0; str[i] != '\0'; i++) {
-        total += insertSubstring(root, str, i);
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            int isNew = 1;
+            for (int k = i; k < j; k++) {
+                if (str[k] == str[j]) {
+                    isNew = 0;
+                    break;
+                }
+            }
+            count += isNew;
+        }
     }
-
-    return total;
+    return count;
 }
 
 int main() {
     char str[100];
-    scanf("%s", str
+    scanf("%s", str);
+
+    printf("%d\n", countDistinctSubstrings(str));
+
+    return 0;
+}
