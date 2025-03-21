@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-// Function to count the number of trailing zeros
 int countTrailingZeros(int n) {
     if (n == 0) {
-        return 32; // For a 32-bit integer, if the number is 0, all bits are zero.
+        return 32; 
     }
 
     int count = 0;
@@ -17,14 +16,11 @@ int countTrailingZeros(int n) {
 
 int main() {
     int num;
-
-    // Get the number from the user
+r
     scanf("%d", &num);
 
-    // Count the number of trailing zeros
     int trailingZeros = countTrailingZeros(num);
 
-    // Print the result
     printf("%d\n", trailingZeros);
 
     return 0;
