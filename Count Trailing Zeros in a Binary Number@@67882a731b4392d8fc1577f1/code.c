@@ -16,7 +16,7 @@ int countTrailingZeros(int n) {
 
 int main() {
     int num;
-r
+
     scanf("%d", &num);
 
     int trailingZeros = countTrailingZeros(num);
