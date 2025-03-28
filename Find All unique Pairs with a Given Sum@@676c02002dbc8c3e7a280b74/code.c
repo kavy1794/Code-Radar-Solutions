@@ -1,31 +1,30 @@
-#include <stdio.h>
-#include <stdbool.h>
-
-void findUniquePairs(int arr[], int n, int target) {
-    bool visited[100001] = {0}; 
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] == target && !visited[i] && !visited[j]) {
-                printf("%d %d\n", arr[i], arr[j]);
-                visited[i] = visited[j] = true; 
-            }
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    int target;
+    scanf("%d",&target);
+    int allsame=1;
+    for(int i=1;i<n;i++){
+        if(arr[i]!=arr[0]){
+            allsame=0;
         }
     }
+    if(allsame){
+        printf("%d %d",arr[0],arr[1]);
+    }else{ for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]+arr[j]==target){
+                
+                printf("%d %d\n",arr[i],arr[j]);
+                
+            }
+        }
+    }}
+   
+    return 0;
 }
-
-int main() {
-    int N, T;
-    scanf("%d", &N);
-
-    int arr[N];
-    for (int i = 0; i < N; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    scanf("%d", &T);
-
-    findUniquePairs(arr, N, T);
-
-        return 0;
-}
-        
