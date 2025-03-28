@@ -26,5 +26,6 @@ int main() {
 
     findUniquePairs(arr, N, T);
 
-    return 0;
+        return 0;
 }
+        
